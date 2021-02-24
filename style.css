@@ -1,0 +1,123 @@
+/* adds a pale blue background colour to the body of all webpages */
+body{
+  padding: 0px;
+  margin: 0px;
+  background-color: #00ccff;
+}
+/* holds styling properties of header element and its positioning */
+.header{
+  background-color: #4B0082;
+  color: white;
+  font-family: Georgia, Serif;
+  text-align: center;
+  top: 0px;
+  line-height: 50%;
+  width: 100%;
+  padding: 32px;
+}
+.header img{
+    display: inline-block;
+    margin-left: 5px;
+    width:5%;
+    height:5%;
+}
+
+.websiteInfo{
+  text-align:left;
+  display: block;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-left: 10px;
+  padding-right: 50px;
+  font-family: arial, Serif;
+}
+.container{
+  position: relative;
+  margin-top:-320px;
+  margin-right:-450px;
+
+}
+
+.formBox{
+  height: 540px;
+  width:420px;
+  position: relative;
+  margin:6% auto;
+  background: #fff;
+  padding: 5px;
+  overflow: hidden;
+}
+
+.buttonBox{
+  width:220px;
+  margin: 35px auto;
+  position: relative;
+  box-shadow: 0 0 20px 9px #ff61241f;
+  border-radius: 30px;
+}
+
+.toggle-btn{
+  padding: 10px 30px;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  outline: none;
+  position: relative;
+
+}
+#btn{
+  top:0;
+  left:0;
+  position: absolute;
+  width:110px;
+  height:100%;
+  background:linear-gradient(to right, #99ebff, #9933ff);
+  border-radius: 30px;
+  transition: .5s;
+}
+.input-group{
+  top:180px;
+  position: absolute;
+  width:280px;
+  transition: .5s;
+}
+.textInput{
+  width:100%;
+  padding:10px 0;
+  margin:5px 0;
+  border-left: 0;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 1px solid #999;
+  outline:none;
+  background:transparent;
+}
+
+.login-btn{
+  width:85%;
+  padding:10px 30px;
+  cursor:pointer;
+  display:block;
+  margin:auto;
+  background:linear-gradient(to right,#99ebff, #9933ff);
+  border:0;
+  outline:none;
+  border-radius:30px;
+}
+
+.checkBox{
+  margin: 30px 10px 30px 0;
+}
+span{
+  color: #777;
+  font-size: 12px;
+  bottom: 68px;
+  postion: absolute;
+}
+
+#login{
+  left:50px;
+}
+#signup{
+  left:450px;
+}
