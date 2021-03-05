@@ -1,7 +1,11 @@
+
+
 <?php
 //access the session data before any session data is created or accessed.
-//session_start();
+session_start();
+
 ?>
+
 <!DOCTYPE html>
 <html>
 <head><link rel="stylesheet" type="text/css" href="style.css"></head> <!--access to CSS style sheet-->
@@ -18,11 +22,13 @@
 <div class="websiteInfo">
   <h2>What is 'Master Maths Now'?</h2>
   <p>Master Maths Now is an online Maths tool to help Key Stage 2<br>
-     students improve their maths skills by practising different<br>
-      questions from a range of maths topics.
+     students improve their maths skills online by practising different<br>
+     questions from a range of maths topics to help them<br>
+     become confident mathematicians. We offer:
   <ul>
-    <li>STEP-BY-STEP MATHS EXAMPLES</li>
+    <li>STEP-BY-STEP MATHS EXAMPLES AND EXPLANATIONS</li>
     <li>LOTS OF PRACTISE QUESTIONS</li>
+    <li>ABILITY TO TRACK STUDENT PROGRESS</li>
     <li>FUN GAMES & REWARDS</li>
   </ul>
   <br>
@@ -33,23 +39,23 @@
   <div class="formBox">
   <div class="buttonBox">
     <div id="btn"></div>
-    <button type="button" class="toggle-btn" onclick="login()">Log In</button>
-    <button type="button" class="toggle-btn" onclick="signup()">Sign Up</button>
+    <button type="button" class="toggle-btn" onclick="login()"><b>LOG IN</b></button>
+    <button type="button" class="toggle-btn" onclick="signup()"><b>SIGN UP</b></button>
   </div>
-  <form id="login" class="input-group">
+  <form method="post" action="loggedin.php" id="login" class="input-group">
     <input type="text" name="username" class="textInput" placeholder="Username" required>
     <input type="password" name="password" class="textInput" placeholder="Enter Password" required>
     <input type="checkbox" class="checkBox"><span>Remember Me</span>
-    <button type="submit" class="login-btn">Log in</button>
+    <button type="submit" name="login_btn" class="login-btn"><b>LOG IN!</b></button>
   </form>
-  <form id="signup" class="input-group">
-    <input type="text" name="firstname" class="textInput" placeholder="First name" required>
-    <input type="text" name="lastname" class="textInput" placeholder="Last name" required>
+  <form method="post" action="signup.php" id="signup" class="input-group">
+    <input type="text" name="firstName" class="textInput" placeholder="First name" required>
+    <input type="text" name="lastName" class="textInput" placeholder="Last name" required>
     <input type="email" name="email" class="textInput" placeholder="Email address" required>
     <input type="text" name="username" class="textInput" placeholder="Username" required>
     <input type="password" name="password" placeholder="Enter Password" pattern="^(?=.*[0-9]+.*)(?=.*[a-zA-Z]+.*)[0-9a-zA-Z]{8,}$" title="(Password must contain at least one letter, one number and be at least 8 characters long)"class="textInput" required>
     <input type="password" name="password2" placeholder="Re-enter Password" pattern="^(?=.*[0-9]+.*)(?=.*[a-zA-Z]+.*)[0-9a-zA-Z]{8,}$" title="(Password must contain at least one letter, one number and be at least 8 characters long)"class="textInput" required>
-    <button type="submit" class="login-btn">Sign Up</button>
+    <button type="submit" name="signup_btn" class="signup-btn"><b>SIGN UP!</b></button>
   </form>
 
 </div>
