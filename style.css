@@ -22,6 +22,7 @@ body{
     height:5%;
 }
 
+
 .websiteInfo{
   text-align:left;
   display: block;
@@ -35,6 +36,11 @@ body{
 }
 
 .yearGroupInfo{
+  text-align:center;
+  display: block;
+  font-family:Apple Chancery, cursive;
+}
+.mathsTopicInfo{
   text-align:center;
   display: block;
   font-family:Apple Chancery, cursive;
@@ -218,10 +224,75 @@ li a:hover:not(.active) {
 .yearGroup-btn{
   width:100%;
   padding:20px 0;
+  cursor: pointer;
   margin:10px 0;
   border-left: 0;
   border-top: 0;
   border-right: 0;
   font-size: 20px;
   background: white;
+
 }
+
+.mathsTopicBtns{
+    height:600px;
+    width:700px;
+    position:relative;
+    margin-left: 305px;
+
+
+  }
+
+  .mathTopic-btn{
+    float:left;
+    cursor: pointer;
+    width:150px;
+    height:150px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    font-size: 12px;
+    border: 2px solid #9900cc;
+    background: white;
+    border-radius: 25px;
+
+  }
+
+  .mathsTopicBtns img{
+      display: inline-block;
+      float:center;
+      width:50%;
+      height:50%
+  }
+
+  .activitiesBtns{
+    height:600px;
+    width:900px;
+    position:relative;
+    margin-left: 180px;
+
+  }
+  .activity-btn{
+    float:left;
+    cursor: pointer;
+    width:250px;
+    height:250px;
+    margin-left: 150px;
+    margin-bottom: 50px;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    font-size: 16px;
+    border: 2px solid #9900cc;
+    background: white;
+    border-radius: 25px;
+
+  }
+  .activitiesBtns img{
+      display: inline-block;
+      float:center;
+      width:50%;
+      height:50%
+  }

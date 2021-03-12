@@ -12,6 +12,7 @@ if (isset($_POST['login_btn'])){
   //checks if the username and password are not empty
   if($username != "" && $checkPassword != ""){
     $checkPassword = md5($checkPassword); //hashes password
+
     //checks if the entered information matches that of the credentials in the users table in the database
     $query = " select count(*) as allUsers from users where username='".$username."' and password='".$checkPassword."'";
     $result = mysqli_query($con,$query);
@@ -32,7 +33,6 @@ if (isset($_POST['login_btn'])){
       echo '<script>alert("Username/password incorrect")</script>';
       echo "<script>location.href='index.php'</script>";
     }
-
   }
   //close database connection
   mysqli_close($con);

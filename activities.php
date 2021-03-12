@@ -16,13 +16,13 @@ Javascript and boostrap imported links for the modal style-->
   <link href="style.css" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <title>Registered User</title>
+  <title>Activities</title>
 </head>
 <body>
   <!--Header class that welcomes the user, htmlspecialchars function converts special characters to HMTL entities and prevents HTML injections-->
   <div class="header">
     <img src="logo.png" alt="MathsLogo" class="homepagelogo">
-    <h1>Welcome <?= htmlspecialchars($_SESSION['username']) ?>!</h1>
+    <h1>Master Maths Now <?= htmlspecialchars($_SESSION['username']) ?>!</h1>
     <!--Adds logout button on right hand side of header-->
     <a href="logout.php"><input type="button" class="logout-btn" id='logout' name="logout_btn" value="Log out"></a>
   </div>
@@ -34,16 +34,7 @@ Javascript and boostrap imported links for the modal style-->
   <li style="float:right"><a href="#help">Help</a></li>
   </ul>
 </div>
-<div class="yearGroupInfo">
-  <h3>What year group are you in?</h3>
-  <p>To help you with your Maths journey,
-    please select what year group you are in:</p>
-</div>
-<div class="yearGroupBtns">
-  <form method="get" action="mathsTopics.php">
-      <button type="submit" name="year3_btn" class="yearGroup-btn"><b>YEAR 3</b></button><br>
-      <button type="submit" name="year4_btn" class="yearGroup-btn"><b>YEAR 4</b></button><br>
-      <button type="submit" name="year5_btn" class="yearGroup-btn"><b>YEAR 5</b></button><br>
-      <button type="submit" name="year6_btn" class="yearGroup-btn"><b>YEAR 6</b></button><br>
-  </form>
+<div class="activitiesBtns">
+  <button type="submit" name="examples_btn" class="activity-btn">  <img src="steps.png" alt="examples" class="activity1"> <br><br><b>Step-by-Step Examples</b><br></button>
+  <button type="submit" name="questions_btn" class="activity-btn">  <img src="qa.png" alt="questions" class="activity2"><br><br><b>Practise Questions</b><br></button>
 </div>
