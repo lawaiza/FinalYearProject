@@ -296,3 +296,71 @@ li a:hover:not(.active) {
       width:50%;
       height:50%
   }
+
+.questionContainer{
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+    margin-top:200px;
+    margin-left:300px;
+    float:center;
+    display: flex;
+
+    border: 2px solid #9900cc;
+    width:800px;
+    max-width:80%;
+    height:500px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px 2px;
+  }
+
+.btn-grid{
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap:10px;
+  margin:20px 0;
+}
+
+:root{
+  --hue-neutral:200;
+  --hue-incorrect:0;
+  --hue-correct:145
+}
+.btns{
+  --hue: var(--hue-neutral);
+  border: 1px solid hsl(var(--hue), 100%, 30%);
+  background-color: hsl(var(--hue), 100%, 50%);
+  border-radius: 5px;
+  padding: 5px 10px;
+  colour:white;
+  outline:none;
+
+}
+.btns:hover{
+  border-color: black;
+}
+
+.btns.correct{
+ --hue: var(--hue-correct);
+ color: black;
+
+}
+.btns.incorrect{
+ --hue: var(--hue-incorrect);
+}
+
+.buttonControls{
+  margin-top:200px;
+  margin-left:-150px;
+
+}
+.start-btn, .next-btn{
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px 20px;
+}
+.hide{
+  display: none;
+}

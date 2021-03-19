@@ -14,18 +14,19 @@ if (isset($_POST['login_btn'])){
     $checkPassword = md5($checkPassword); //hashes password
 
     //checks if the entered information matches that of the credentials in the users table in the database
-    $query = " select count(*) as allUsers from users where username='".$username."' and password='".$checkPassword."'";
+    $query = " select * from users where username='".$username."' and password='".$checkPassword."'";
     $result = mysqli_query($con,$query);
-    $row = mysqli_fetch_array($result);
+    $row = mysqli_num_rows($result);
     //checks all records in user table
-    $count = $row['allUsers'];
+    //$count = $row['allUsers'];
+    //echo $count;
 
 
     //if a successful match is found, then save the username in the current session and redirect to the logged in page
-    if($count > 0){
+    if($row== 1){
       //echo "<script>location.href='homepage.php'</script>";
       $_SESSION['username'] = $username;
-    //  echo '<script>alert("Welcome")</script>';
+      //echo '<script>alert("Welcome")</script>';
       echo "<script>location.href='homepage.php'</script>";
       //header('Location: homepage.php');
     }else {

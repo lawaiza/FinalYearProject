@@ -74,5 +74,6 @@ function login(){
   y.style.left = "450px";
   z.style.left = "0px";
 }
+</script>
 
 </body>
