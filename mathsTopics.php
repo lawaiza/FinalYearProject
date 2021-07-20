@@ -14,6 +14,9 @@ Javascript and boostrap imported links for the modal style-->
 <head>
   <link rel = "stylesheet" href= "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link href="style.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <title>Maths Topics</title>
@@ -23,12 +26,14 @@ Javascript and boostrap imported links for the modal style-->
   <div class="header">
     <img src="logo.png" alt="MathsLogo" class="homepagelogo">
     <h1>Master Maths Now <?= htmlspecialchars($_SESSION['username']) ?>!</h1>
+    <a href="#" class="previous" onclick="javascript:window.history.back(-1);return false;">&#8249;</a>
+    <a href="#" class="next" onclick="history.forward();">&#8250;</a>
     <!--Adds logout button on right hand side of header-->
     <a href="logout.php"><input type="button" class="logout-btn" id='logout' name="logout_btn" value="Log out"></a>
   </div>
   <div class="navbar">
   <ul>
-  <li><a class="active" href="#home">Home</a></li>
+  <li><a class="active" href="homepage.php">Home</a></li>
   <li><a href="#account">My Account</a></li>
   <li><a href="#contact">Contact</a></li>
   <li style="float:right"><a href="#help">Help</a></li>
@@ -39,6 +44,7 @@ Javascript and boostrap imported links for the modal style-->
   <p>Choose a Maths topic below that you would like
     to test your skills on or learn more about! </p>
 </div>
+<!--buttons for all different topics-->
 <div class="mathsTopicBtns">
   <form method="get" action="activities.php">
       <button type="submit" name="numbers_btn" class="mathTopic-btn">  <img src="cubes.png" alt="numbers" class="topic1"><br><br><b>Number & Place Value</b><br></button>
