@@ -173,8 +173,80 @@ const mathsQuestions=[
 
 
   ]
-}
+},
+{
+  question: 'What is the next missing number of this sequence: 203, 303,..?',
+  answers:[
+    { text: '313', correct: false},
+    { text: '413', correct: false},
+    { text: '403', correct: true},
+    { text: '103', correct: false}
 
+
+  ]
+},
+{
+  question: 'Which number has the digit 2 in the units column?',
+  answers:[
+    { text: '624', correct: false},
+    { text: '642', correct: true},
+    { text: '246', correct: false},
+    { text: '426', correct: false}
+
+
+  ]
+},
+{
+  question: 'Which number has the digit 7 in the hundreds column?',
+  answers:[
+    { text: '397', correct: false},
+    { text: '379', correct: false},
+    { text: '937', correct: false},
+    { text: '739', correct: true}
+
+
+  ]
+},{
+  question: 'Match the number to the written form: eight hundred and twelve',
+  answers:[
+    { text: '812', correct: true},
+    { text: '821', correct: false},
+    { text: '128', correct: false},
+    { text: '182', correct: false}
+
+
+  ]
+},{
+  question: 'What is 10 less than 309?',
+  answers:[
+    { text: '409', correct: false},
+    { text: '319', correct: false},
+    { text: '209', correct: false},
+    { text: '299', correct: true}
+
+
+  ]
+},{
+  question: 'How many tens are there in 600?',
+  answers:[
+    { text: '6 tens', correct: false},
+    { text: '60 tens', correct: true},
+    { text: '16 tens', correct: false},
+    { text: '600 tens', correct: false}
+
+
+  ]
+},{
+  question: 'What is 1 more than 545?',
+  answers:[
+    { text: '555', correct: false},
+    { text: '544', correct: false},
+    { text: '645', correct: false},
+    { text: '546', correct: true}
+
+
+  ]
+}
 
 
 ]

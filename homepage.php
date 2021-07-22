@@ -32,9 +32,9 @@ Javascript and boostrap imported links for the modal style-->
   </div>
   <div class="navbar">
   <ul>
-  <li><a class="active" href="homepage.php">Home</a></li>
+  <li><a  href="homepage.php">Home</a></li>
   <li><a href="#account">My Account</a></li>
-  <li><a href="#contact">Contact</a></li>
+  <li><a  href="contact.php">Contact</a></li>
   <li style="float:right"><a href="#help">Help</a></li>
   </ul>
 </div>

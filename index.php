@@ -20,25 +20,27 @@ session_start();
   <div class="header">
     <img src="logo.png" alt="MathsLogo" class="logo">
     <h1><b>Master Maths Now!</b></h1>
+      <!--Adds logout button on right hand side of header-->
+      <a  href="contact.php"><input type="button" class="contact-btn" id='contact' name="contact_btn" value="Contact Us"></a>
   </div>
   <!--Info about purpose of web application-->
 <div class="websiteInfo">
-    <textarea id="txt" rows="10" cols="10" name="text" wrap=on readonly>
+
   <h2>What is 'Master Maths Now'?</h2>
   <p>Master Maths Now is an online Maths tool to help Key Stage 2<br>
      students improve their maths skills online by practising different<br>
      questions from a range of maths topics to help them<br>
      become confident mathematicians. We offer:
   <ul>
-    <li>STEP-BY-STEP MATHS EXAMPLES AND EXPLANATIONS</li>
-    <li>LOTS OF PRACTISE QUESTIONS</li>
-    <li>ABILITY TO TRACK STUDENT PROGRESS</li>
-    <li>FUN GAMES & REWARDS</li>
+    <li><span class="red_text">STEP-BY-STEP MATHS EXAMPLES AND EXPLANATIONS</span></li>
+    <li><span class="green_text">LOTS OF PRACTISE QUESTIONS</span></li>
+    <li><span class="pink_text">ABILITY TO TRACK STUDENT PROGRESS</span></li>
+    <li><span class="blue_text">FUN GAMES & REWARDS</span></li>
   </ul>
   <br>
   So sign up today to get started on your maths journey!</p>
-</textarea>
-<!--text-to-speech functionality-->
+</div.
+<!--text-to-speech functionality
     <input type="button" onclick="textSpeak()" value="submit">
     <script>
     //JS to replace HTML tags with blank space when info is read out loud

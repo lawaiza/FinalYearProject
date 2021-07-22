@@ -26,8 +26,12 @@ body{
     height:5%;
 }
 
-
+.websiteInfo h2{
+  text-align: center;
+  font-size: 22px;
+}
 .websiteInfo{
+  font-size: 18px;
   text-align:left;
   display: block;
   width:50%;
@@ -128,6 +132,17 @@ body{
   outline:none;
   border-radius:30px;
 }
+.contact-btn{
+
+  padding:15px 30px;
+  display:block;
+  background:white;
+  color: black;
+  cursor:pointer;
+  border:0;
+  outline:none;
+  border-radius:30px;
+}
 
 .login-btn{
   width:85%;
@@ -174,6 +189,14 @@ span{
 
 #logout{
   margin: auto;
+  margin-top: -45px;
+  float:right;
+
+}
+#contact{
+    font-family: 'Luckiest Guy';
+  margin: auto;
+  margin-right: 100px;
   margin-top: -45px;
   float:right;
 
@@ -364,13 +387,13 @@ border: 2px solid #9900cc;
   width:600px;
 margin-top: -300px;
 margin-left:-200px;
-border: 2px solid #9900cc;
+
 
 }
 .questionContainer #question {
   font-size: 2.2rem;
   font-weight: bold;
-border: 2px solid #9900cc;
+
 height:60px;
 width:600px;
 
@@ -386,7 +409,7 @@ width:600px;
   gap:50px;
   margin:20px 120px;
   padding:10px;
-  border: 2px solid #9900cc;
+
   font-family: 'Luckiest Guy';
 }
 #answerBtn .btns{
@@ -624,4 +647,13 @@ margin-top: 10px;
 
   font-size: 19.5px;
   font-family: 'Luckiest Guy';
+}
+.contactText h6{
+  text-align: center;
+  font-size: 25px;
+  font-family: 'Luckiest Guy';
+}
+.contactText p{
+  font-size: 20px;
+  text-align: center;
 }
