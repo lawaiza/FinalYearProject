@@ -2,7 +2,9 @@
 // Creates/resumes a session
 session_start();
 
-//PHP code for the register form when register button is clicked, uses database connection and removes escaped characters in each input string to prevent SQL injection
+//PHP code for the register form when register button is clicked,
+//uses database connection and removes escaped characters in each
+//input string to prevent SQL injection
 if (isset($_POST['signup_btn'])){
   require 'dbConnector.php';
   $firstName = mysqli_real_escape_string($con, $_POST['firstName']);

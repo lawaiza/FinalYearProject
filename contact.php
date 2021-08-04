@@ -2,13 +2,11 @@
 //resumes current session and control of errors displayed to user
 session_start();
 error_reporting(0);
-//PHP code for logout button and redirects to the logout file
-if (isset($_POST['logout_btn'])){
-  header("location: logout.php");
-}
+
 ?>
 <!--HTML declaration and link to the style.css file and bootstrap framework to style elements
-Javascript and boostrap imported links for the modal style-->
+Javascript and boostrap imported links for the modal style
+and style for fonts-->
 <!DOCTYPE html>
 <html>
 <head>
@@ -22,15 +20,15 @@ Javascript and boostrap imported links for the modal style-->
   <title>Contact Us</title>
 </head>
 <body>
-  <!--Header class that welcomes the user, htmlspecialchars function converts special characters to HMTL entities and prevents HTML injections-->
+  <!--Header class that welcomes the user to contact team, htmlspecialchars function converts special characters to HMTL entities and prevents HTML injections-->
   <div class="header">
     <img src="logo.png" alt="MathsLogo" class="homepagelogo">
     <h1>Get in touch <?= htmlspecialchars($_SESSION['username']) ?>!</h1>
+    <!--previous icon button to go back to previous page-->
     <a href="#" class="previous" onclick="javascript:window.history.back(-1);return false;">&#8249;</a>
-
-
   </div>
-
+<!--contains information for user to get in contact-->
 <div class="contactText">
   <h6>We can help you!</h6>
   <p> If you need any assistance, please email any queries to <span class="red_text">180032419@aston.ac.uk</span> with <span class="red_text">your username</span> and we will be in touch as soon as possible!</p>
+</div>

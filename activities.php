@@ -26,12 +26,13 @@ Javascript and boostrap imported links for the modal style-->
   <div class="header">
     <img src="logo.png" alt="MathsLogo" class="homepagelogo">
     <h1>Master Maths Now <?= htmlspecialchars($_SESSION['username']) ?>!</h1>
+      <!--next/previous icon button to go forward/back-->
     <a href="#" class="previous" onclick="javascript:window.history.back(-1);return false;">&#8249;</a>
   <a href="#" class="next" onclick="history.forward();">&#8250;</a>
     <!--Adds logout button on right hand side of header-->
     <a href="logout.php"><input type="button" class="logout-btn" id='logout' name="logout_btn" value="Log out"></a>
   </div>
-  <!--creates a navigation bar -->
+  <!--navigation bar to group HTML links in one place using lists-->
   <div class="navbar">
   <ul>
   <li><a href="homepage.php">Home</a></li>
@@ -40,7 +41,8 @@ Javascript and boostrap imported links for the modal style-->
   <li style="float:right"><a href="#help">Help</a></li>
   </ul>
 </div>
-<!--creates buttons which direct to the corresponding webpage-->
+<!--creates activity buttons with icon images
+ which direct to the corresponding webpage-->
 <div class="activitiesBtns1">
   <form method="get" action="examples.php">
     <button type="submit" name="examples_btn" class="activity-btn1">  <img src="steps.png" alt="examples" class="activity1"> <br><br><b>Step-by-Step Examples</b><br></button></form>

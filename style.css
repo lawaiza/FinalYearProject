@@ -1,12 +1,16 @@
+/* ALL STYLING FOR ALL ELEMENTS oN WEBSITE */
+
 /* adds a pale blue background colour to the body of all webpages */
 body{
   padding: 0px;
   margin: 0px;
-  /*background-color: #00ccff
-  background-color: #99ffff;*/
+  background-color: #00ccff
+  /*background-color: #99ffff;
   background-color: #b3e6ff;
-
+  background-color: #ccf2ff
+  background-color: #99ceff*/
 }
+
 /* holds styling properties of header element and its positioning */
 .header{
   background-color: #4B0082;
@@ -18,20 +22,23 @@ body{
   width: 100%;
   padding: 32px;
 }
+/* styles postion of website logo */
 .header img{
-
     display: inline-block;
     margin-left: 5px;
     width:5%;
     height:5%;
 }
 
+/* styles heading */
 .websiteInfo h2{
   text-align: center;
-  font-size: 22px;
+  font-size: 25px;
 }
+
+/* styles website text info on landing page */
 .websiteInfo{
-  font-size: 18px;
+  font-size: 20px;
   text-align:left;
   display: block;
   width:50%;
@@ -40,32 +47,33 @@ body{
   padding-left: 10px;
   padding-right: 50px;
   font-family: 'Luckiest Guy'
-  /*font-family:Apple Chancery, cursive;*/
-
 }
 
+/* styles text on homepage */
 .yearGroupInfo{
   text-align:center;
   display: block;
   font-family: 'Luckiest Guy'
-  /*font-family:Apple Chancery, cursive;*/
 }
+
+/* styles text on topics page */
 .mathsTopicInfo{
   text-align:center;
   display: block;
   font-family: 'Luckiest Guy'
-  /*font-family:Apple Chancery, cursive;*/
 }
 
+/* styles form container on landing page */
 .container{
   float:right;
   position: relative;
-  margin-top:-330px;
+  margin-top:-370px;
   margin-right:100px;
   height:500px;
   width:400px;
 }
 
+/* main box for forms and hides one at a time */
 .formBox{
   height: 450px;
   width:380px;
@@ -74,10 +82,11 @@ body{
   background: #fff;
   padding: 5px;
   overflow: hidden;
-  border: 2px solid #9900cc;
+  border: 5px solid #9900cc;
   border-radius: 5px;
 }
 
+/* adds shadow behind the toggle button */
 .buttonBox{
   width:225px;
   margin: 35px auto;
@@ -86,6 +95,7 @@ body{
   border-radius: 30px;
 }
 
+/* adds style to the toggle buttons */
 .toggle-btn{
   padding: 10px 30px;
   cursor: pointer;
@@ -93,8 +103,9 @@ body{
   border: 0;
   outline: none;
   position: relative;
-
 }
+
+/* allows the toggle buttons to be visible */
 #btn{
   top:0;
   left:0;
@@ -105,12 +116,16 @@ body{
   border-radius: 30px;
   transition: .5s;
 }
+
+/* styles placement of input sections in form */
 .input-group{
   top:100px;
   position: absolute;
   width:280px;
   transition: .5s;
 }
+
+/* styles input sections in form */
 .textInput{
   width:100%;
   padding:10px 0;
@@ -122,6 +137,8 @@ body{
   outline:none;
   background:transparent;
 }
+
+/* styles log out button */
 .logout-btn{
   padding:15px 30px;
   display:block;
@@ -132,8 +149,9 @@ body{
   outline:none;
   border-radius:30px;
 }
-.contact-btn{
 
+/* styles contact button */
+.contact-btn{
   padding:15px 30px;
   display:block;
   background:white;
@@ -144,6 +162,7 @@ body{
   border-radius:30px;
 }
 
+/* styles login button in form */
 .login-btn{
   width:85%;
   padding:10px 30px;
@@ -156,6 +175,7 @@ body{
   border-radius:30px;
 }
 
+/* styles sign up button in form */
 .signup-btn{
   width:85%;
   padding:10px 30px;
@@ -168,43 +188,48 @@ body{
   outline:none;
   border-radius:30px;
 }
-.checkBox{
-  margin: 30px 10px 30px 0;
-}
+
+/* styles span tags for various elements like score and timer */
 span{
   color: #777;
   font-size: 12px;
   bottom: 68px;
   postion: absolute;
-
 }
 
+/* styles position of log in button */
 #login{
   left:70px;
   top:140px;
 }
+
+/* styles position of sign up button */
 #signup{
   left:450px;
 }
 
+/* styles position of log out button */
 #logout{
   margin: auto;
   margin-top: -45px;
   float:right;
-
 }
+
+/* styles position of contact button */
 #contact{
-    font-family: 'Luckiest Guy';
+  font-family: 'Luckiest Guy';
   margin: auto;
   margin-right: 100px;
   margin-top: -45px;
   float:right;
-
 }
+
+/* styles position of logo on homepage */
 .homepagelogo{
   float:left;
 }
 
+/* styles navbar */
 .navbar ul {
   list-style-type: none;
   margin: 0;
@@ -213,20 +238,18 @@ span{
   background-color: #333;
 }
 
-/*}
-position: fixed;
-top: 0;
-width: 100%;*/
-
+/* styles navbar list */
 .navbar ul li {
   float: left;
   border-right:1px solid #bbb;
 }
 
+/* styles last element in navbar */
 .navbar ul li:last-child {
   border-right: none;
 }
 
+/* styles each link in navbar */
 li a {
   display: block;
   color: white;
@@ -235,15 +258,18 @@ li a {
   text-decoration: none;
 }
 
+/* styles navbar hyperlinks */
 li a:hover:not(.active) {
   background-color: #111;
   color:#33ccff;
 }
 
+/* styles navbar hyperlinks */
 .active {
   background-color: #9900cc;
 }
 
+/* styles year group buttons container */
 .yearGroupBtns{
   float:center;
   height:360px;
@@ -252,28 +278,27 @@ li a:hover:not(.active) {
   margin-left:380px;
 }
 
+/* styles year group buttons */
 .yearGroup-btn{
   width:100%;
   padding:20px 0;
   cursor: pointer;
   margin:10px 0;
-
   font-size: 25px;
   background: white;
   font-family: 'Luckiest Guy';
-
 }
 
+/* styles topic button container */
 .mathsTopicBtns{
     height:600px;
     width:700px;
     position:relative;
     margin-left: 305px;
-
-
   }
 
-  .mathTopic-btn{
+/* styles math topic buttons */
+.mathTopic-btn{
     float:left;
     cursor: pointer;
     width:150px;
@@ -287,35 +312,35 @@ li a:hover:not(.active) {
     border: 2px solid #9900cc;
     background: white;
     border-radius: 25px;
-
-
   }
 
-  .mathsTopicBtns img{
+/* styles icon images in topic buttons */
+.mathsTopicBtns img{
       display: inline-block;
       float:center;
       width:50%;
       height:50%
   }
 
-  .activitiesBtns1{
+/* styles example activity button container */
+.activitiesBtns1{
     height:200px;
     width:200px;
     position:relative;
     margin-left: 180px;
-
-
   }
-  .activitiesBtns2{
+
+/* styles questions activity button container  */
+.activitiesBtns2{
     height:200px;
     width:200px;
     position:relative;
     margin-top:-200px;
     margin-left: 600px;
-
-
   }
-  .activity-btn1{
+
+  /* styles example activity button  */
+.activity-btn1{
     float:left;
     cursor: pointer;
     width:250px;
@@ -330,7 +355,9 @@ li a:hover:not(.active) {
     background: white;
     border-radius: 25px;
   }
-  .activity-btn2{
+
+/* styles questions activity button  */
+.activity-btn2{
     float:left;
     cursor: pointer;
     width:250px;
@@ -344,24 +371,26 @@ li a:hover:not(.active) {
     border: 2px solid #9900cc;
     background: white;
     border-radius: 25px;
-
-
   }
-  .activitiesBtns1 img{
-      display: inline-block;
-      float:center;
-      width:50%;
-      height:50%
-  }
-  .activitiesBtns2 img{
+
+/* styles icon image for examples button */
+.activitiesBtns1 img{
       display: inline-block;
       float:center;
       width:50%;
       height:50%
   }
 
+/* styles icon image for questions button */
+.activitiesBtns2 img{
+      display: inline-block;
+      float:center;
+      width:50%;
+      height:50%
+  }
+
+/* styles questions container */
 .questionContainer{
-
     box-sizing: border-box;
     justify-content: center;
     align-items: center;
@@ -369,37 +398,33 @@ li a:hover:not(.active) {
     margin-left:350px;
     float:center;
     display: flex;
-
-
-border: 2px solid #9900cc;
-    width:650px;
-
+    border: 2px solid #9900cc;
+    width:700px;
     height:650px;
     background-color: white;
     border-radius: 5px;
     padding: 10px;
     box-shadow: 0 0 10px 2px;
-
   }
-#questions-container{
 
+/* styles container for each question */
+#questions-container{
   height:30px;
   width:600px;
-margin-top: -300px;
-margin-left:-200px;
-
-
+  margin-top: -300px;
+  margin-left:-200px;
 }
+
+/* styles each question */
 .questionContainer #question {
   font-size: 2.2rem;
   font-weight: bold;
-
-height:60px;
-width:600px;
-
+  height:60px;
+  width:600px;
 }
-.btn-grid{
 
+/* styles multiple choice buttons and 2x2 grid */
+.btn-grid{
   font-size: 2.5rem;
   font-weight: bold;
   width:350px;
@@ -409,41 +434,49 @@ width:600px;
   gap:50px;
   margin:20px 120px;
   padding:10px;
-
   font-family: 'Luckiest Guy';
 }
+
+/* styles answer buttons */
 #answerBtn .btns{
     border: 2px solid #9900cc;
 }
+
+/* styles answer buttons to show correct/incorrect answer by HSL colours*/
 :root{
   --hue-neutral:200;
   --hue-incorrect:0;
   --hue-correct:145
 }
+
+/* styles answer buttons to green/red depending on if right answers */
 .btns{
-  --hue: var(--hue-neutral);
+  --hue: var(--hue-neutral);/*if nothing is selected, stays neutral*/
   border: 1px solid hsl(var(--hue), 100%, 30%);
   background-color: hsl(var(--hue), 100%, 50%);
   border-radius: 5px;
   padding: 5px 10px;
   colour:white;
   outline:none;
-
 }
+
+/* styles hover for buttons */
 .btns:hover{
   border-color: black;
 }
 
+/* styles for correct answer button */
 .btns.correct{
  --hue: var(--hue-correct);
  color: black;
-
 }
+
+/* styles for incorrect answer button  */
 .btns.incorrect{
  --hue: var(--hue-incorrect);
 }
 
-
+/* styles start button and reset button */
 .buttonControls .start-btn{
   font-size:5rem;
   margin-bottom:-90px;
@@ -451,25 +484,48 @@ width:600px;
   height:100px;
   font-weight: bold;
   padding: 10px 20px;
-border: 2px solid #9900cc;
-font-family: 'Luckiest Guy';
+  border: 2px solid #9900cc;
+  font-family: 'Luckiest Guy';
 }
 
+/* styles next button */
 .buttonControls .next-btn{
   font-size:3rem;
   margin-top:525px;
   margin-left:-100px;
   font-weight: bold;
   padding: 10px 10px;
-border: 2px solid #9900cc;
-font-family: 'Luckiest Guy';
+  border: 2px solid #9900cc;
+  font-family: 'Luckiest Guy';
 }
+
+/* styles submit button */
+.buttonControls .submitted-btn{
+  font-size:3rem;
+  margin-top:525px;
+  margin-left:-100px;
+  font-weight: bold;
+  padding: 10px 10px;
+  border: 2px solid #9900cc;
+  font-family: 'Luckiest Guy';
+}
+
+/* styles results text */
+#modalBig{
+  color: #3366ff;
+}
+
+/* styles results text */
+#modalSmall{
+  color: #00b300;
+}
+
+/* styles to hide certain elements */
 .hide{
-
   display: none;
-
 }
 
+/* styles score container*/
 .scoreContainer{
   margin-top:-500px;
   margin-right:0px;
@@ -477,11 +533,13 @@ font-family: 'Luckiest Guy';
   height:50px;
   width:150px;
   padding:10px 15px;
-border: 2px solid #9900cc;
-white-space: nowrap;
-font-family: 'Luckiest Guy';
-font-size: 15px;
+  border: 2px solid #9900cc;
+  white-space: nowrap;
+  font-family: 'Luckiest Guy';
+  font-size: 15px;
 }
+
+/* styles timer */
 .timerContainer{
   margin-top:-500px;
   margin-left: 10px;
@@ -493,27 +551,30 @@ font-size: 15px;
   white-space: nowrap;
   font-family: 'Luckiest Guy';
   font-size:15px;
-
 }
-.SP-container{
-  font-size: 2rem;
+
+/* styles result section*/
+.resultContainer{
+  font-size: 2.8rem;
   font-weight: bold;
   border: 5px double #9900cc;
   padding: 15px;
   margin-top:-200px;
   margin-left:-300px;
   text-align: center;
+  font-family: 'Luckiest Guy';
 }
 
-.SP-container #right-answers, #all-questions, #answers-percent{
+/* styles result section*/
+.resultContainer #rightAnswers, #allQuestions, #answersPercentage{
   font-size: 2rem;
   font-weight: bold;
   color: #9900cc;
   font-family: 'Luckiest Guy';
-
 }
 
-.number-of-question-text #current-question, #all-questions2{
+/* styles result section */
+.number-of-question-text #current-question, #allQuestions2{
   font-size: 2rem;
   font-weight: bolder;
   font-style: italic;
@@ -522,6 +583,7 @@ font-size: 15px;
   font-size:20px;
 }
 
+/* styles question number text */
 .number-of-question-text {
   font-size: 2rem;
   font-style: italic;
@@ -531,47 +593,54 @@ font-size: 15px;
   font-family: 'Luckiest Guy';
   font-size:20px;
 }
+
+/* styles previous button */
  .previous{
    border: 2px solid white;
    margin-left: -1130px;
    margin-top: 10px;
-    text-decoration: none;
-    display: inline-block;
-    padding: 20px 20px;
-    background-color: #00ccff;
-  color: white;
-  border-radius: 30%;
-  font-size: 3.6rem;
+   text-decoration: none;
+   display: inline-block;
+   padding: 20px 20px;
+   background-color: #00ccff;
+   color: white;
+   border-radius: 30%;
+   font-size: 3.6rem;
  }
+
+ /* styles next page button */
 .next{
   border: 2px solid white;
   margin-left:10px;
   text-decoration: none;
- display: inline-block;
- padding: 20px 20px;
- background-color: #00ccff;
- color: white;
- border-radius: 30%;
- font-size:3.6rem;
+  display: inline-block;
+  padding: 20px 20px;
+  background-color: #00ccff;
+  color: white;
+  border-radius: 30%;
+  font-size:3.6rem;
 }
 
+/* styles next page button */
 .next:hover {
   background-color: #ddd;
   color: black;
 }
+
+/* styles previous button */
 .previous:hover {
   background-color: #ddd;
   color: black;
 }
 
+/* styles example container */
 .exampleContainer{
-  text-align: center;
+      text-align: center;
       box-sizing: border-box;
       justify-content: center;
       align-items: center;
       margin-top:50px;
       margin-left:200px;
-
       border: 2px solid #9900cc;
       width:900px;
       height:1000px;
@@ -579,80 +648,87 @@ font-size: 15px;
       border-radius: 5px;
       padding: 10px;
       box-shadow: 0 0 10px 2px;
-
-
-
 }
+
+/* styles example text */
 .exampleContainer h4{
   font-size: 35px;
   font-family: 'Luckiest Guy';
-
 }
+
+/* styles example text */
 .exampleContainer h5{
   font-size: 25px;
   font-family: 'Luckiest Guy';
   color: #3366ff;
-
 }
+
+/* styles text to colour red */
 .red_text {
   color: red;
   font-size: 20px;
 }
+
+/* styles  text to colour pink  */
 .pink_text {
   color: #ff0066;
   font-size: 20px;
 }
+
+/* styles text to colour green*/
 .green_text {
   color: #00b300;
   font-size: 20px;
 }
+
+/* styles text to colour lilac */
 .lilac_text {
   color: #9900ff;
   font-size: 20px;
 }
 
+/* styles text to colour blue */
 .blue_text {
   color: #3366ff;
   font-size: 20px;
 }
+
+/* styles example image 1 */
 .example1{
   display: inline-block;
   float:center;
-margin-top: 40px;
-margin-left:50px;
+  margin-top: 40px;
+  margin-left:50px;
   border: 2px solid #9900cc;
-
-
-
-
   font-size: 12px;
-
-
 }
+
+/* styles example image 2 */
 .example2{
   display: inline-block;
   float:center;
-border: 2px solid #9900cc;
-
-margin-top: 10px;
+  border: 2px solid #9900cc;
+  margin-top: 10px;
   margin-left: 50px;
   margin-bottom: 10px;
-
   font-size: 12px;
 }
 
-
+/* styles examples paragraph */
 .exampleContainer p{
   margin-top:50px;
-
   font-size: 19.5px;
   font-family: 'Luckiest Guy';
 }
+
+/* styles contact text */
 .contactText h6{
   text-align: center;
   font-size: 25px;
   font-family: 'Luckiest Guy';
 }
+
+/* styles contact paragraph text */
 .contactText p{
   font-size: 20px;
   text-align: center;

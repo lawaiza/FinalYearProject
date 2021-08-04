@@ -26,10 +26,12 @@ Javascript and boostrap imported links for the modal style-->
   <div class="header">
     <img src="logo.png" alt="MathsLogo" class="homepagelogo">
     <h1>Welcome <?= htmlspecialchars($_SESSION['username']) ?>!</h1>
+          <!--next icon button to go forward-->
         <a href="#" class="next" onclick="history.forward();">&#8250;</a>
     <!--Adds logout button on right hand side of header-->
     <a href="logout.php"><input type="button" class="logout-btn" id='logout' name="logout_btn" value="Log out"></a>
   </div>
+  <!--navigation bar to group HTML links in one place using lists-->
   <div class="navbar">
   <ul>
   <li><a  href="homepage.php">Home</a></li>

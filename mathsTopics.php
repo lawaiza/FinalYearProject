@@ -26,11 +26,13 @@ Javascript and boostrap imported links for the modal style-->
   <div class="header">
     <img src="logo.png" alt="MathsLogo" class="homepagelogo">
     <h1>Master Maths Now <?= htmlspecialchars($_SESSION['username']) ?>!</h1>
+    <!--next/previous icon button to go forward/back-->
     <a href="#" class="previous" onclick="javascript:window.history.back(-1);return false;">&#8249;</a>
     <a href="#" class="next" onclick="history.forward();">&#8250;</a>
     <!--Adds logout button on right hand side of header-->
     <a href="logout.php"><input type="button" class="logout-btn" id='logout' name="logout_btn" value="Log out"></a>
   </div>
+  <!--navigation bar to group HTML links in one place using lists-->
   <div class="navbar">
   <ul>
   <li><a  href="homepage.php">Home</a></li>
@@ -39,12 +41,13 @@ Javascript and boostrap imported links for the modal style-->
   <li style="float:right"><a href="#help">Help</a></li>
   </ul>
 </div>
+<!--Information regarding user action for topics-->
 <div class="mathsTopicInfo">
   <h3>Master your Maths!</h3>
   <p>Choose a Maths topic below that you would like
     to test your skills on or learn more about! </p>
 </div>
-<!--buttons for all different topics-->
+<!--buttons for all different topics with image icons-->
 <div class="mathsTopicBtns">
   <form method="get" action="activities.php">
       <button type="submit" name="numbers_btn" class="mathTopic-btn">  <img src="cubes.png" alt="numbers" class="topic1"><br><br><b>Number & Place Value</b><br></button>

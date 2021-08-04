@@ -7,6 +7,8 @@ if (isset($_POST['logout_btn'])){
   header("location: logout.php");
 }
 ?>
+<!--HTML declaration and link to the style.css file and bootstrap framework to style elements
+Javascript and boostrap imported links for the modal style-->
 <!DOCTYPE html>
 <html>
 <head>
@@ -19,15 +21,19 @@ if (isset($_POST['logout_btn'])){
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script defer src="script.js"></script>
 <title>Step by step examples</title>
-</head> <!--access to CSS style sheet-->
+</head>
 <body>
+  <!--Header class that welcomes the user, htmlspecialchars function
+  converts special characters to HMTL entities and prevents HTML injections-->
   <div class="header">
     <img src="logo.png" alt="MathsLogo" class="homepagelogo">
     <h1>Master Maths Now <?= htmlspecialchars($_SESSION['username']) ?>!</h1>
+      <!--previous icon button to go back-->
     <a href="#" class="previous" onclick="javascript:window.history.back(-1);return false;">&#8249;</a>
     <!--Adds logout button on right hand side of header-->
     <a href="logout.php"><input type="button" class="logout-btn" id='logout' name="logout_btn" value="Log out"></a>
   </div>
+  <!--navigation bar to group HTML links in one place using lists-->
   <div class="navbar">
   <ul>
   <li><a  href="homepage.php">Home</a></li>
@@ -36,10 +42,12 @@ if (isset($_POST['logout_btn'])){
   <li style="float:right"><a href="#help">Help</a></li>
   </ul>
   </div>
+  <!--container for the maths example with text explanation and images-->
   <div class="exampleContainer">
     <h4>NUMBER & PLACE VALUE EXAMPLE</h4>
     <h5> Question: Fill in the missing numbers.</h5>
   <img src="example.png" alt="numExample" class="example1">
+  <!--span tags allow for certain text to change colours-->
   <p>So the above image shows 3 three-digit numbers and we have to find the other 4 numbers.<br>
   <span class="red_text">STEP 1</span> - We know they are three-digit numbers as in each box, there are 3 digits - <span class="pink_text">Hundreds</span>, <span class="green_text">Tens</span> and <span class="lilac_text">Units</span>.<br>
   Let's look at the first number 362 - We know this number is made up of <span class="pink_text">3 Hundreds</span>, <span class="green_text">6 Tens</span> and <span class="lilac_text">2 Units</span> which is
@@ -55,8 +63,4 @@ if (isset($_POST['logout_btn'])){
   <span class="blue_text">412 + 10 = 422</span>!<br>
   So the filled in grid should look like:</p>
   <img src="answer.png" alt="numExample" class="example2">
-
-
-
-
 </div>
