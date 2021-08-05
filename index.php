@@ -24,7 +24,7 @@ session_start();
 <div class="websiteInfo">
   <!--span tag allows for certain text to change colours, br tag
    used to separate text onto a new line-->
-  <h2><span class="lilac_text">What is 'Master Maths Now'?</span></h2>
+  <h2>What is 'Master Maths Now'?</h2>
   <p>Master Maths Now is an online Maths tool to help Key Stage 2<br>
      students improve their maths skills online by practising different
      questions from a range of maths topics to help them<br>

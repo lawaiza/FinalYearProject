@@ -4,11 +4,7 @@
 body{
   padding: 0px;
   margin: 0px;
-  background-color: #00ccff
-  /*background-color: #99ffff;
-  background-color: #b3e6ff;
-  background-color: #ccf2ff
-  background-color: #99ceff*/
+  background-color: #80e5ff;
 }
 
 /* holds styling properties of header element and its positioning */
@@ -33,7 +29,8 @@ body{
 /* styles heading */
 .websiteInfo h2{
   text-align: center;
-  font-size: 25px;
+  font-size: 35px;
+  color: #400080;
 }
 
 /* styles website text info on landing page */
@@ -82,7 +79,7 @@ body{
   background: #fff;
   padding: 5px;
   overflow: hidden;
-  border: 5px solid #9900cc;
+  border: 5px solid #4B0082;
   border-radius: 5px;
 }
 
