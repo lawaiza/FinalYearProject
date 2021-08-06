@@ -39,23 +39,7 @@ session_start();
   <br>
   So sign up today to get started on your maths journey!</p>
 </div>
-<!--text-to-speech functionality
-    <input type="button" onclick="textSpeak()" value="submit">
-    <script>
-    //JS to replace HTML tags with blank space when info is read out loud
-    function RemoveHTML( text )
-    {
-       var regEx = /<[^>]*>/g;
-        return text.replace(regEx, "");
-    }
-    function textSpeak(){
-      var text=document.getElementById('txt').value;
-      text=RemoveHTML(text);
-      responsiveVoice.speak(text);
 
-    }
-    </script>
-</div>
 <!--create sign up and log in forms-->
 <div class="container">
   <div class="formBox">
@@ -99,16 +83,3 @@ function login(){
   z.style.left = "0px";
 }
 </script>
-<!--if(isset($_POST['submit'])){
-  $txt=$_POST['txt'];
-  $txt=htmlspecialchars($txt);
-  $txt=rawurlencode($txt);
-  $html=file_get_contents('https://translate.google.com/translate_tts?ie=UTF-8&client=gtx&q='.$txt.'&tl=en');
-  $player="<audio controls='controls' autoplay><source src='data:audio/mpeg;base64,".base64_encode($html)."'></audio>";
-  echo $player;
-}
-?>
-<form method="post">
-<input id="txt" name="txt" type="textbox" />
-<input name="submit" type="submit" value="Convert to speech" /></form>
-</body>
